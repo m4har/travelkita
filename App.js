@@ -29,7 +29,7 @@ const TabNav = createBottomTabNavigator(
     MyAccount: MyAccountScreen,
   },
   {
-    navigationOptions: ({ navigation }) => ({
+    defaultNavigationOptions: ({ navigation }) => ({
       tabBarIcon: ({ focused, horizontal, tintColor }) => {
         const { routeName } = navigation.state;
         let iconName;
